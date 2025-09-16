@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KrishiHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <section id="login-page" class="page active">
+    <div class="login-box glass">
+      <h1 class="logo-text">🌱 KrishiHub</h1>
+      <input type="text" id="mobile" placeholder="Enter Mobile Number">
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button class="btn" onclick="login()">Login</button>
+    </div>
+  </section>
+
+  <!-- Language Page -->
+  <section id="language-page" class="page">
+    <div class="lang-box glass">
+      <h2>Select Language / भाषा चुनें</h2>
+      <button class="btn" onclick="setLanguage('en')">English</button>
+      <button class="btn" onclick="setLanguage('hi')">हिंदी</button>
+    </div>
+  </section>
+
+  <!-- Features Page -->
+  <section id="features-page" class="page">
+    <header>
+      <h1 id="welcome-text">Welcome to KrishiHub</h1>
+      <button onclick="logout()" class="btn logout-btn">🚪 Logout</button>
+    </header>
+    <div class="features" id="features-list"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content glass">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
